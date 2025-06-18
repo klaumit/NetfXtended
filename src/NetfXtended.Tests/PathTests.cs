@@ -5,12 +5,12 @@ using NUnit.Framework;
 
 namespace NetfXtended.Tests
 {
-    public class PathTests
+    public class ImageTests
     {
         [Test]
         public void Check()
         {
-            using var img = Images.FindByManifest<PathTests>("funny.png");
+            using var img = Images.FindByManifest<ImageTests>("funny.png");
             Assert.AreEqual(337, img.Width);
             Assert.AreEqual(327, img.Height);
             Assert.AreEqual(95, (int)img.HorizontalResolution);
