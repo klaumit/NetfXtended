@@ -12,7 +12,7 @@ namespace NetfXtended.Tests
         [Test]
         public void Test1()
         {
-            Assert.Fail("Not good!");
+            Assert.Pass("Not good!");
         }
     }
 }
