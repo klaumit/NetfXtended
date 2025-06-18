@@ -1,6 +1,7 @@
-﻿namespace NetfXtended.Core;
-
-public class Class1
+﻿namespace NetfXtended.Core
 {
+    public class Class1
+    {
 
+    }
 }

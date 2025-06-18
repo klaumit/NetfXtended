@@ -1,6 +1,7 @@
-﻿namespace NetfXtended.WinForms;
-
-public class Class1
+﻿namespace NetfXtended.WinForms
 {
+    public class Class1
+    {
 
+    }
 }
