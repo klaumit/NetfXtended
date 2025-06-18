@@ -1,0 +1,22 @@
+<Project>
+
+  <PropertyGroup>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.0.1</Version>
+    <Authors>klaumit</Authors>
+    <Company>Klaus Limited</Company>
+    <Copyright>MIT 2024, $(Authors)</Copyright>
+    <Description>The .NET Framework extended to be more usable</Description>
+    <PackageTags>NetfXtended;NetFX;Desktop;Library</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/klaumit/NetfXtended</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/klaumit/NetfXtended</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+</Project>
