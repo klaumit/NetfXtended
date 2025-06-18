@@ -7,7 +7,7 @@ namespace NetfXtended.WinForms
     {
         public static Image FindByManifest<T>(string name)
         {
-            var stream = ResourcesX.FindByManifest<T>(name);
+            var stream = Resources.FindByManifest<T>(name);
             var image = Image.FromStream(stream);
             return image;
         }

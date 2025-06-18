@@ -1,18 +1,20 @@
-﻿using NUnit.Framework;
+﻿using NetfXtended.WinForms;
+using NUnit.Framework;
+
+#pragma warning disable NUnit2005
 
 namespace NetfXtended.Tests
 {
     public class PathTests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
-        public void Test1()
+        public void Check()
         {
-            Assert.Pass("Not good!");
+            using var img = Images.FindByManifest<PathTests>("funny.png");
+            Assert.AreEqual(337, img.Width);
+            Assert.AreEqual(327, img.Height);
+            Assert.AreEqual(95, (int)img.HorizontalResolution);
+            Assert.AreEqual(95, (int)img.VerticalResolution);
         }
     }
 }

@@ -1,9 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0;net48;net46;net40;net35;net20</TargetFrameworks>
+    <TargetFrameworks>net8.0-windows;net48;net46;net40;net35;net20</TargetFrameworks>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\NetfXtended.WinForms\NetfXtended.WinForms.csproj" />
+	</ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.2" />
@@ -12,5 +16,10 @@
     <PackageReference Include="NUnit.Analyzers" Version="4.4.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
   </ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Resources\**\*.png" />
+		<EmbeddedResource Include="Resources\**\*.png" />
+	</ItemGroup>
 
 </Project>

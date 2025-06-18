@@ -1,10 +1,9 @@
-﻿using System.Drawing;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
 
 namespace NetfXtended.Core
 {
-    public static class ResourcesX
+    public static class Resources
     {
         public static Stream FindByManifest<T>(string name)
         {
