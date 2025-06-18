@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetfXtended.Core", "NetfXte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetfXtended.WinForms", "NetfXtended.WinForms\NetfXtended.WinForms.csproj", "{1447864F-F92F-4E3C-8D19-6B5DAF59D5B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetfXtended.Tests", "NetfXtended.Tests\NetfXtended.Tests.csproj", "{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{1447864F-F92F-4E3C-8D19-6B5DAF59D5B7}.Release|x64.Build.0 = Release|Any CPU
 		{1447864F-F92F-4E3C-8D19-6B5DAF59D5B7}.Release|x86.ActiveCfg = Release|Any CPU
 		{1447864F-F92F-4E3C-8D19-6B5DAF59D5B7}.Release|x86.Build.0 = Release|Any CPU
+		{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}.Debug|x64.Build.0 = Debug|Any CPU
+		{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}.Debug|x86.Build.0 = Debug|Any CPU
+		{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}.Release|x64.ActiveCfg = Release|Any CPU
+		{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}.Release|x64.Build.0 = Release|Any CPU
+		{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}.Release|x86.ActiveCfg = Release|Any CPU
+		{FBF4E65C-8736-43E4-90C4-A2E2BDA16CF6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
