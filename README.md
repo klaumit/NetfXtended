@@ -1,6 +1,4 @@
 
-<img src="assets/ProjectBanner.png" height="5" alt="NetfXtended project banner" />
-
 # NetfXtended
 
 It is an extension library for the .NET Framework to make it more usable for everyone.
