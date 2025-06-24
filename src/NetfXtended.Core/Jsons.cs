@@ -8,15 +8,15 @@ namespace NetfXtended.Core
 {
     public static class Jsons
     {
-        public static string WritePlain(object val)
+        public static string WritePlain(object val, bool format = true)
         {
-            var res = JsonConvert.SerializeObject(val, GetConfig());
+            var res = JsonConvert.SerializeObject(val, GetConfig(format));
             return res!;
         }
 
-        public static void WriteJson(object val, string file)
+        public static void WriteJson(object val, string file, bool format = true)
         {
-            var json = WritePlain(val);
+            var json = WritePlain(val, format);
             File.WriteAllText(file, json, Encoding.UTF8);
         }
 
@@ -34,11 +34,11 @@ namespace NetfXtended.Core
             return res!;
         }
 
-        private static JsonSerializerSettings GetConfig()
+        private static JsonSerializerSettings GetConfig(bool format = true)
         {
             var config = new JsonSerializerSettings
             {
-                Formatting = Formatting.Indented,
+                Formatting = format ? Formatting.Indented : Formatting.None,
                 Converters = { new StringEnumConverter() },
                 NullValueHandling = NullValueHandling.Ignore
             };
