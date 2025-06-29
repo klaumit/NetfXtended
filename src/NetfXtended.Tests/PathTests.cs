@@ -35,5 +35,15 @@ namespace NetfXtended.Tests
             var list = Paths.FindFiles(root);
             Assert.IsTrue(list.Length >= 755, $"{list.Length}");
         }
+
+        [Test]
+        public void CheckRelativePath()
+        {
+            var root = Paths.GetProjectPath(typeof(Resources));
+            var list = Paths.FindFiles(root);
+            var first = list[0];
+            var rel = Paths.GetRelativePath(root, first);
+            Assert.AreEqual("ByteTests.cs", rel);
+        }
     }
 }

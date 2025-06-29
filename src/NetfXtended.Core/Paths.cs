@@ -9,6 +9,15 @@ namespace NetfXtended.Core
         public static string GetRelativePath(string relativeTo, string path)
         {
 #if NETFRAMEWORK || NETSTANDARD2_0
+            static string AppendDirectorySeparatorChar(string path)
+            {
+                if (!path.EndsWith(Path.DirectorySeparatorChar.ToString()))
+                {
+                    return path + Path.DirectorySeparatorChar;
+                }
+                return path;
+            }
+
             var fromUri = new Uri(AppendDirectorySeparatorChar(relativeTo));
             var toUri = new Uri(path);
             if (fromUri.Scheme != toUri.Scheme)
@@ -26,16 +35,7 @@ namespace NetfXtended.Core
             return Path.GetRelativePath(relativeTo, path);
 #endif
         }
-
-        private static string AppendDirectorySeparatorChar(string path)
-        {
-            if (!path.EndsWith(Path.DirectorySeparatorChar.ToString()))
-            {
-                return path + Path.DirectorySeparatorChar;
-            }
-            return path;
-        }
-
+        
         public static string Combine(string start, params string[] args)
         {
 #if NETFRAMEWORK
