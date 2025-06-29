@@ -11,7 +11,14 @@ namespace NetfXtended.Tests
         public void CheckProject()
         {
             var path = Paths.GetProjectPath(typeof(Resources));
-            Assert.IsTrue(path.Contains(@"\bin\"));
+            Assert.IsTrue(path.Contains(@"\src\"), path);
+        }
+
+        [Test]
+        public void CheckCombine()
+        {
+            var path = Paths.Combine("a", "b", "c", "d");
+            Assert.AreEqual(@"a\b\c\d", path);
         }
     }
 }
