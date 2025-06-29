@@ -9,7 +9,7 @@ namespace NetfXtended.Core
     {
         public static string GetRelativePath(string relativeTo, string path)
         {
-#if NETFRAMEWORK
+#if NETFRAMEWORK || NETSTANDARD2_0
             var fromUri = new Uri(AppendDirectorySeparatorChar(relativeTo));
             var toUri = new Uri(path);
             if (fromUri.Scheme != toUri.Scheme)

@@ -7,7 +7,7 @@ namespace NetfXtended.Core
     {
         public static string ToHexString(byte[] bytes)
         {
-#if NETFRAMEWORK
+#if NETFRAMEWORK || NETSTANDARD2_0
             var sb = new StringBuilder();
             foreach (var b in bytes)
                 sb.Append(b.ToString("X2"));

@@ -13,7 +13,7 @@ namespace NetfXtended.Core
 
         public static string Hash(Stream stream)
         {
-#if NETFRAMEWORK
+#if NETFRAMEWORK || NETSTANDARD2_0
             using var algo = SHA256.Create();
             var hash = algo.ComputeHash(stream);
 #else
