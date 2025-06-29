@@ -20,5 +20,20 @@ namespace NetfXtended.Tests
             var path = Paths.Combine("a", "b", "c", "d");
             Assert.AreEqual(@"a\b\c\d", path);
         }
+
+        [Test]
+        public void CheckCreateDir()
+        {
+            const string tmp = "a";
+            Assert.AreEqual(tmp, Paths.CreateDir(tmp));
+        }
+
+        [Test]
+        public void CheckFindFiles()
+        {
+            var root = Paths.GetProjectPath(typeof(Resources));
+            var list = Paths.FindFiles(root);
+            Assert.IsTrue(list.Length >= 755, $"{list.Length}");
+        }
     }
 }

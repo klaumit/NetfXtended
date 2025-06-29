@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -71,7 +70,7 @@ namespace NetfXtended.Core
             return root;
         }
 
-        public static IEnumerable<string> FindFiles(string root, string term = "*.*")
+        public static string[] FindFiles(string root, string term = "*.*")
         {
             const SearchOption o = SearchOption.AllDirectories;
             var files = Directory.GetFiles(root, term, o);
