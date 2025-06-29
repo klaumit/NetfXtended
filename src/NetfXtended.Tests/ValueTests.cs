@@ -1,7 +1,5 @@
 ﻿using NetfXtended.Core;
 using NUnit.Framework;
-using NetfXtended.WinForms;
-using NUnit.Framework;
 
 #pragma warning disable NUnit2005
 
